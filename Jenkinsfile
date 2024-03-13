@@ -9,12 +9,12 @@ pipeline {
     } 
     stage('Test') {
       steps {
-          sh ./output'
+          sh './output'
       }
     }
     stage('Deploy') {
       steps {
-          ocho'deploy'
+          echo'deploy'
       }
     }
   }
